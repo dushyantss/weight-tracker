@@ -22,3 +22,5 @@ Style/BlockDelimiters:
 Style/MethodCallWithArgsParentheses:
   Enabled: false
 
+Layout/LineLength:
+  Enabled: false

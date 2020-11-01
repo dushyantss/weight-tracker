@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+
+// Add any custom styling of bootstrap above this import statement or else it won't work.
+@import 'bootstrap/scss/bootstrap';

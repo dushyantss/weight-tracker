@@ -29,14 +29,18 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# Form helper. Makes forms much simpler
 gem 'simple_form'
 
+# Authentication library.
 gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Testing library.
   gem 'rspec-rails'
+  # Factories for creating test objects. Much easier than fixtures in my opinion.
   gem 'factory_bot_rails'
 end
 
@@ -58,7 +62,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
+  # Rails auditing tool
   gem 'brakeman'
+  # Security auditor for gems
+  gem 'bundler-audit'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
